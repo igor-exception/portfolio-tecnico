@@ -45,7 +45,10 @@
 							</li>
 
 							<li>
-								<a href="mailto:igoroliveira.oliveira@gmail.com" class="icon solid fa-envelope">
+								<a
+									href="mailto:igoroliveira.oliveira@gmail.com"
+									class="icon solid fa-envelope"
+								>
 									<span class="label">E-mail</span>
 								</a>
 							</li>
@@ -59,7 +62,7 @@
 							<h1>Monitoramento de temperatura da geladeira</h1>
 
 							<p>
-								Projeto pessoal em desenvolvimento — ESP32, sensor, API e dashboard
+								Projeto pessoal em desenvolvimento — ESP32, sensores, API e dashboard
 							</p>
 						</header>
 
@@ -75,16 +78,45 @@
 						<h2>Objetivo</h2>
 
 						<p>
-							Coletar temperaturas periodicamente, enviá-las para uma API e manter um
-							histórico para consulta em gráficos.
+							O objetivo deste projeto é desenvolver um sistema capaz de realizar o
+							<strong>monitoramento contínuo, 24 horas por dia e 7 dias por semana,
+							das temperaturas do refrigerador e do freezer da minha geladeira</strong>.
+						</p>
+
+						<p>
+							A proposta é que as medições sejam realizadas automaticamente pelos sensores,
+							enviadas para uma API e armazenadas para formar um histórico de funcionamento.
+							Essas informações serão apresentadas em uma
+							<strong>dashboard com gráficos e dados de temperatura</strong>, permitindo
+							acompanhar de maneira simples o comportamento da geladeira ao longo do tempo.
+						</p>
+
+						<p>
+							Além de visualizar a temperatura atual, o histórico permitirá observar
+							variações e entender como as temperaturas do refrigerador e do freezer
+							se comportam durante diferentes períodos, sem depender de medições manuais.
+						</p>
+
+						<p>
+							A <strong>primeira etapa do projeto já foi concluída</strong>: desenvolver
+							e validar um protótipo capaz de realizar a leitura de temperatura utilizando
+							um ESP32 e o sensor DS18B20. Com essa etapa funcionando, o projeto pode
+							avançar para o envio, armazenamento e visualização dos dados.
 						</p>
 
 						<!-- Etapa atual -->
 						<h2>Etapa atual</h2>
 
 						<p>
-							O ESP32 e o sensor DS18B20 já foram montados e testados. A API está em
-							construção. Por isso, o projeto ainda não é apresentado como concluído.
+							O primeiro protótipo com ESP32 e sensor DS18B20 foi montado e testado
+							com sucesso. O sistema já consegue captar as variações de temperatura
+							e apresentar as leituras em tempo real pelo Monitor Serial do Arduino IDE.
+						</p>
+
+						<p>
+							Com a etapa de aquisição de temperatura validada, o desenvolvimento agora
+							avança para a comunicação com a API, armazenamento das medições e,
+							posteriormente, construção da dashboard.
 						</p>
 
 						<!-- Vídeo do protótipo -->
@@ -125,9 +157,11 @@
 						<h2>Próximas etapas</h2>
 
 						<ul>
-							<li>Criar o recebimento e armazenamento das medições</li>
+							<li>Criar o recebimento das medições pela API</li>
+							<li>Armazenar o histórico de temperaturas em banco de dados</li>
 							<li>Adicionar testes à API</li>
-							<li>Desenvolver o dashboard</li>
+							<li>Desenvolver a dashboard para visualização das temperaturas e gráficos</li>
+							<li>Implementar o monitoramento do refrigerador e do freezer</li>
 							<li>Planejar o funcionamento durante quedas de internet e energia</li>
 						</ul>
 
